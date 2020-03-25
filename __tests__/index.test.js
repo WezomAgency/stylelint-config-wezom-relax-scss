@@ -29,7 +29,7 @@ rules.forEach((rule) => {
 		beforeEach(() => {
 			result = stylelint.lint({
 				config,
-				code: getCode(rule, 'valid.css')
+				code: getCode(rule, 'valid.scss')
 			});
 		});
 
@@ -50,7 +50,7 @@ rules.forEach((rule) => {
 		beforeEach(() => {
 			result = stylelint.lint({
 				config,
-				code: getCode(rule, 'invalid.css')
+				code: getCode(rule, 'invalid.scss')
 			});
 		});
 
