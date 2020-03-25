@@ -1,8 +1,11 @@
 {
   "name": "stylelint-config-wezom-relax-scss",
-  "version": "0.1.0-alpha",
+  "version": "0.2.0-alpha",
   "description": "shareable SCSS config for stylelint based on stylelint-config-recommended-scss and stylelint-config-wezom-relax",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "stylelint-valid": "stylelint \"__tests__/**/valid.scss\" --config ./index.js",
@@ -56,6 +59,6 @@
   },
   "dependencies": {
     "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-config-wezom-relax": "0.1.0-alpha"
+    "stylelint-config-wezom-relax": "^0.2.0-alpha"
   }
 }
