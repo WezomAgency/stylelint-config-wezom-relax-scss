@@ -1,0 +1,61 @@
+{
+  "name": "stylelint-config-wezom-relax-scss",
+  "version": "0.1.0-alpha",
+  "description": "shareable SCSS config for stylelint based on stylelint-config-recommended-scss and stylelint-config-wezom-relax",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "stylelint-valid": "stylelint \"__tests__/**/valid.scss\" --config ./index.js",
+    "stylelint-invalid": "stylelint \"__tests__/**/invalid.scss\" --config ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WezomAgency/stylelint-config-wezom-relax.git"
+  },
+  "keywords": [
+    "stylelint",
+    "config",
+    "Wezom"
+  ],
+  "author": "Oleg Dutchenko <dutchenko.o.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WezomAgency/stylelint-config-wezom-relax/issues"
+  },
+  "homepage": "https://github.com/WezomAgency/stylelint-config-wezom-relax#readme",
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "printWidth": 90,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "useTabs": true
+  },
+  "jest": {
+    "cacheDirectory": "<rootDir>/.cache/jest",
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.test.js"
+    ],
+    "preset": "jest-preset-stylelint",
+    "coverageReporters": [
+      "json-summary",
+      "lcov"
+    ]
+  },
+  "devDependencies": {
+    "chalk": "^3.0.0",
+    "from-cwd": "^1.0.1",
+    "glob": "^7.1.6",
+    "jest": "^24.9.0",
+    "jest-preset-stylelint": "^1.3.0",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.0.0",
+    "stylelint-scss": "^3.16.0"
+  },
+  "dependencies": {
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-wezom-relax": "0.1.0-alpha"
+  }
+}
