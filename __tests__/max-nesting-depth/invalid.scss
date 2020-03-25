@@ -1,0 +1,45 @@
+.block {
+	color: red;
+
+	&__element {
+		color: green;
+
+		&--modifier {
+			color: blue;
+
+			&::after {
+				content: 'X';
+			}
+
+			&:hover {
+				color: yellow;
+
+				&::after {
+					content: 'Y';
+				}
+			}
+
+			& + span {
+				font-style: italic;
+
+				&::before {
+					content: 'X';
+
+					@include media () {
+						position: relative;
+
+						// should fall
+						@include media () {
+							position: relative;
+						}
+					}
+				}
+
+				// should not fall
+				&:hover {
+					font-style: normal;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.block {
+	color: red;
+
+	&__element {
+		color: green;
+
+		&--modifier {
+			color: blue;
+
+			&::after {
+				content: 'X';
+
+				@include media () {
+					position: relative;
+				}
+			}
+
+			&:hover {
+				color: yellow;
+
+				&::after {
+					content: 'Y';
+				}
+			}
+		}
+	}
+}
