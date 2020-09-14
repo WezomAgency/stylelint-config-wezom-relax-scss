@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-wezom-relax-scss",
-  "version": "0.2.0-alpha",
+  "version": "0.2.1-alpha",
   "description": "shareable SCSS config for stylelint based on stylelint-config-recommended-scss and stylelint-config-wezom-relax",
   "main": "index.js",
   "files": [
