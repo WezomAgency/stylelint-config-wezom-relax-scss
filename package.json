@@ -52,7 +52,7 @@
     "from-cwd": "^1.0.1",
     "glob": "^7.1.6",
     "jest": "^24.9.0",
-    "jest-preset-stylelint": "^1.3.0",
+    "jest-preset-stylelint": "^6.1.0",
     "prettier": "^1.19.1",
     "stylelint": "^13.0.0",
     "stylelint-scss": "^3.16.0"
