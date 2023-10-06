@@ -54,7 +54,7 @@
     "jest": "^24.9.0",
     "jest-preset-stylelint": "^6.1.0",
     "prettier": "^1.19.1",
-    "stylelint": "^13.0.0",
+    "stylelint": "^15.10.3",
     "stylelint-scss": "^3.16.0"
   },
   "dependencies": {
